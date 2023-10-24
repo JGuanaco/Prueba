@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: black;
+}
+.cards{
+    display: flex;
+    width: 130%;
+    padding: 50px;
+}
+.cards .card {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4 px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+#A{
+    background-color: yellow;
+}
+#B{
+    background-color: blue;
+}
+#C{
+    background-color: red;
+}
+.cards .card a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cards .card a:hover {
+    color: lightyellow;
+}
+.cards .card .header{
+    flex:1;
+}
+.cards .card .footer img{
+    width: 100px;
+    border-radius: 60%;
+}
+.cards .card .footer .autor a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cards .card:hover{
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+}
+.cards .card .header .date{
+    padding: 10px 0;
+}
+.cards .card .header .title{
+    padding: 10px 0;
+    font-size: 28px;
+}
+.cards .card [class*="element"]{
+    margin-left: -100px;
+}
+.element-1:hover{
+    margin-left: -30px;
+}
+.element-2:hover{
+    margin-left: -130px;
+}
+.element-3:hover{
+    margin-left: -130px;
+}
